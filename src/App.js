@@ -1,4 +1,4 @@
-import Acknowldgements from "./Acknowledgements";
+import Acknowledgements from "./Acknowledgements";
 
 
 function App() {
