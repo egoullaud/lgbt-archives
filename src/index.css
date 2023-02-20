@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: "Harmonica-reg";
+  src: url("./fonts/Harmonia\ Sans\ W01\ Regular.ttf");
+}
+
+@font-face {
+  font-family: "Harmonica-mono";
+  src: url("./fonts/Harmonia\ Sans\ Mono\ W01\ Bold.ttf");
+}
+
+@font-face {
+  font-family: "Harmonica-bold";
+  src: url("./fonts/Harmonia\ Sans\ W01\ Bold.ttf");
+}
+
+@font-face {
+  font-family: "Harmonica-italic";
+  src: url("./fonts/Harmonia\ Sans\ W06\ Black\ Italic.ttf");
+}
+
+@font-face {
+  font-family: "Harmonica-condensed";
+  src: url("./fonts/Harmonia\ Sans\ W06\ Condensed.ttf");
+}
