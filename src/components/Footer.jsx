@@ -8,14 +8,14 @@ function Footer() {
       <div className='border-b-2 border-white w-[98%] py-[2rem]'>
         <div className='flex flex-col items-end justify-end w-[100%]'>
           <img className='w-[1.75%] mb-[2rem]' src={upArrow} alt="" />
-          <p className='text-2xl'>Back to top</p>
+          <a href="#" className='text-2xl'>Back to top</a>
         </div>
     
       </div>
       <div className='flex w-[100%] justify-between pt-[2rem]'>
         <div className='ml-4'>
           <img className='mb-2 w-[40%]' src={avLogo} alt="" />
-          <p>Learn more about AIDS Vancouver</p>
+          <a className='underline' href="#">Learn more about AIDS Vancouver</a>
         </div>
         <div className='flex items-end mr-4'>
           <p className='text-white text-sm'> 2022 © AIDS Vancouver | Visit us at<span className='cursor-pointer underline' > aidsvancouver.org</span> </p>
