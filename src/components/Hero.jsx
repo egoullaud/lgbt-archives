@@ -9,11 +9,11 @@ function Hero() {
     <div >
         <div className='flex '>
             <div className='flex flex-col  bg-[#0d8360] w-[50%] border-b-[0.1px] border-b-[#c7c7c7]'>
-                <h1 className='text-white w-[85%] md:text-3xl lg:text-7xl mx-4 my-4 lg:mt-[4rem] font-harmonicaBold'>
+                <h1 className='text-white w-[85%] lg:text-7xl mx-4 my-4 lg:mt-[4rem] font-harmonicaBold'>
                     The following individuals took time out of their busy schedules to meet with our team,
                     and tell their stories.
                 </h1>
-                <h2 className='text-white w-[75%] md:text-xl lg:text-4xl mx-4 my-4 font-harmonicaBold'>
+                <h2 className='text-white w-[80%] lg:text-4xl px-4 py-6 font-harmonicaBold'>
                     We acknowledge that there were many more, and wish we had the time to 
                     have met with everyone. We gratefully thank them for their contributions
                     to the HIV/AIDS movement and to this project.
