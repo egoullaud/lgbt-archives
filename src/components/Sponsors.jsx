@@ -17,7 +17,7 @@ import outTv from '../assets/Television Sponsor 2.svg'
 
 function Sponsors() {
   return (
-    <div className='flex flex-col pb-[6rem]'>
+    <div className='flex flex-col pb-[7rem]'>
       <div className='flex flex-col justify-center items-center'>
         <h3 className='text-[#0d8360] font-harmonicaBold text-4xl mt-[5rem]'>
           The campaign was produced by
