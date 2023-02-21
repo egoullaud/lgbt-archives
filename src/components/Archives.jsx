@@ -11,7 +11,7 @@ function Archives() {
         <h1 className='font-harmonicaBold  text-white w-[100%] text-7xl mt-[2rem] mb-[4rem]'>
           BC Gay & <br/> Lesbian Archives
         </h1>
-        <p className='text-white font-harmonicaReg text-3xl pr-[6rem]'>
+        <p className='text-white font-harmonicaReg text-3xl pr-[6rem] w-[85%]'>
           The BC Gay & Lesbian Archives was founded in 1976 with the task of 
           collecting, preserving items of British Columbia gay, lesbian, bisexual,
           transgendered and intersexual persons. Since it began, the collection
