@@ -6,7 +6,7 @@ function Participants() {
       <h1 className='font-harmonicaBold text-white text-7xl pt-[10rem] pb-[3rem] pl-[4rem]'>
         Participants
         </h1>
-   <div className='flex mx-[4rem] pb-[6rem]'>
+   <div className='flex mx-[4rem] pb-[7rem]'>
         <div className='w-1/4'>
           <ul className='text-white text-3xl font-harmonicaReg'>
             <li className='my-4'>Alan Herbert</li>
