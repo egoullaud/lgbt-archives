@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+## Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Landing Page for code test made with React and TailwindCSS
 
-## Available Scripts
+I coded up this static single page as a code test for a job interview.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+# Install React & create react app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm create-react-app project_name
+cd my-project
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Install TailwindCSS
 
-### `npm test`
+I recommend simply copy pasting the installation instructions from https://tailwindcss.com/docs/guides/create-react-app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
 
-### `npm run build`
+I started by creating the necessary components, assets, and fonts folders to organize each of the pieces. Then, I added each one by one into the main page file (Acknowledgements.jsx) and routed it through App.js.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I built out the wireframes and added in all the content for each page, then used the color picker extension on chrome to pick out the correct colors. Once all the content was formatted on the page, I added in the font files to the Tailwind files. It was a little tricky, so here's a basic breakdown.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Set up Custom Fonts with TailwindCSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Add the .ttf or .otf files to the fonts folder
+2. Open up the index.css file and add each font-style as follows:
 
-### `npm run eject`
+```bash
+@font-face {
+    font-family: "font-name";
+    src: url("../file-location/file-name");
+}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Add the font to the tailwind.config.js file. Add "fontFamily" to "Extend" and list out the fonts from the index.css file. Looks like this:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        harmonicaReg: ["harmonica-reg", "regular"],
+        harmonicaMono: ["harmonica-mono", "mono"],
+        harmonicaBold: ["harmonica-bold","bold"],
+        harmonicaItalic: ["harmonica-italic", "italic"],
+        harmonicaCondensed: ["harmonica-condensed", "condensed"]
+      }
+    },
+  },
+  plugins: [],
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Use them in your code! You can add your custom font like so: classname="font-harmonicaBold"
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Challenges:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Unfortunately the provided picture in the Archves.jsx section was not on a transparent background like the mock-up showed. I attempted to edit it in photoshop, but to save time ultimately I took a screenshot from the mock up as a substitute.
+2. The AV logo svg was not easily edited for color (similar issue to the archive section photo), so I also screenshoted that. If I had more time, I would edit the images in photoship, so the resolution is higher quality.
+3. Responsive elements - the mock up provided was for a desktop view, and I usually build mobile-first so it felt a bit backwards to build the largest screen first.
