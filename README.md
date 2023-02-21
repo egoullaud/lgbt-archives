@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 I coded up this static single page as a code test for a job interview.
 
@@ -7,14 +7,14 @@ React JS, TailwindCSS, deployed with Netlify at https://lgbt-archives.netlify.ap
 
 ## Getting Started
 
-# Install React & create react app
+### Install React & create react app
 
 ```bash
 npm create-react-app project_name
 cd my-project
 ```
 
-# Install TailwindCSS
+### Install TailwindCSS
 
 I recommend simply copy pasting the installation instructions from https://tailwindcss.com/docs/guides/create-react-app
 
@@ -61,7 +61,7 @@ module.exports = {
 
 4. Use them in your code! You can add your custom font like so: classname="font-harmonicaBold"
 
-Challenges:
+### Challenges:
 
 1. Unfortunately the provided picture in the Archves.jsx section was not on a transparent background like the mock-up showed. I attempted to edit it in photoshop, but to save time ultimately I took a screenshot from the mock up as a substitute.
 2. The AV logo svg was not easily edited for color (similar issue to the archive section photo), so I also screenshoted that. If I had more time, I would edit the images in photoship, so the resolution is higher quality.
