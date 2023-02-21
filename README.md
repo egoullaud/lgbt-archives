@@ -1,8 +1,9 @@
 ## Introduction
 
-# Landing Page for code test made with React and TailwindCSS
-
 I coded up this static single page as a code test for a job interview.
+
+### Technologies used: 
+React JS, TailwindCSS, deployed with Netlify at https://lgbt-archives.netlify.app/
 
 ## Getting Started
 
