@@ -1,10 +1,10 @@
 import React from 'react'
-import archives from '../assets/Image.png'
+import archives from '../assets/bc-lgbt-archives.jpg'
 
 function Archives() {
   return (
     <div className='bg-[#0d8360] flex'>
-      <div className='w-[50%] flex justify-center my-[6rem]'>
+      <div className='w-[50%] flex justify-center my-[4rem]'>
         <img className='w-[60%]' src={archives} alt="" />
       </div>
       <div className='w-[50%] flex flex-col justify-center my-[6rem]'>
